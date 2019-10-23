@@ -18,7 +18,7 @@ class Set {
         result.add(value);
       }
     });
-    return result
+    return result;
   }
   union(set) {
     let result = new Set();
@@ -32,7 +32,7 @@ class Set {
         result.add(value);
       }
     });
-    return result
+    return result;
   }
   difference(set) {
     let result = new Set();
@@ -46,7 +46,7 @@ class Set {
         result.add(value);
       }
     });
-    return result
+    return result;
   }
   static staticIntersection(set1, set2) {
     let result = new Set();
@@ -55,7 +55,21 @@ class Set {
         result.add(value);
       }
     });
-    return result
+    return result;
+  }
+  static staticUnion(set1, set2) {
+    let result = new Set();
+    set1.values.forEach(value => {
+      if(!result.has(value)) {
+        result.add(value);
+      }
+    });
+    set2.values.forEach(value => {
+      if(!result.has(value)) {
+        result.add(value);
+      }
+    });
+    return result;
   }
 }
 

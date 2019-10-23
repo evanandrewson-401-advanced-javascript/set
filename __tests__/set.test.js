@@ -43,4 +43,10 @@ describe('Set', () => {
     const staticIntersection = Set.staticIntersection(set1, set2)
     expect(staticIntersection.values).toEqual([1, 2]);
   });
+  it('union static method returns the union', () => {
+    const set1 = new Set([1, 2, 3]);
+    const set2 = new Set([1, 2, 4]);
+    const staticUnion = Set.staticUnion(set1, set2)
+    expect(staticUnion.values).toEqual([1, 2, 3, 4]);
+  });
 })
