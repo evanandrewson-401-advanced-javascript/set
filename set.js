@@ -34,6 +34,20 @@ class Set {
     });
     return result
   }
+  difference(set) {
+    let result = new Set();
+    this.values.forEach(value => {
+      if(!set.has(value)) {
+        result.add(value);
+      }
+    });
+    set.values.forEach(value => {
+      if(!this.has(value)) {
+        result.add(value);
+      }
+    });
+    return result
+  }
 }
 
 module.exports = Set;

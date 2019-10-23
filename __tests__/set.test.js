@@ -31,4 +31,10 @@ describe('Set', () => {
     const union = set1.union(set2)
     expect(union.values).toEqual([1, 2, 3, 4]);
   });
+  it('difference instance method returns the difference', () => {
+    const set1 = new Set([1, 2, 3]);
+    const set2 = new Set([1, 2, 4]);
+    const difference = set1.difference(set2)
+    expect(difference.values).toEqual([3, 4]);
+  });
 })
