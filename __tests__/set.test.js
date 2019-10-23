@@ -37,4 +37,10 @@ describe('Set', () => {
     const difference = set1.difference(set2)
     expect(difference.values).toEqual([3, 4]);
   });
+  it('intersection static method returns the intersection', () => {
+    const set1 = new Set([1, 2, 3]);
+    const set2 = new Set([1, 2, 4]);
+    const staticIntersection = Set.staticIntersection(set1, set2)
+    expect(staticIntersection.values).toEqual([1, 2]);
+  });
 })

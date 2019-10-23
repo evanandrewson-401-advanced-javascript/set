@@ -48,6 +48,15 @@ class Set {
     });
     return result
   }
+  static staticIntersection(set1, set2) {
+    let result = new Set();
+    set1.values.forEach(value => {
+      if(set2.has(value)) {
+        result.add(value);
+      }
+    });
+    return result
+  }
 }
 
 module.exports = Set;

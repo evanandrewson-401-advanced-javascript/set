@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1571869262035" clover="3.2.0">
-  <project timestamp="1571869262035" name="All files">
-    <metrics statements="26" coveredstatements="26" conditionals="12" coveredconditionals="11" methods="12" coveredmethods="12" elements="50" coveredelements="49" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
+<coverage generated="1571869491984" clover="3.2.0">
+  <project timestamp="1571869491984" name="All files">
+    <metrics statements="31" coveredstatements="31" conditionals="14" coveredconditionals="13" methods="14" coveredmethods="14" elements="59" coveredelements="58" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
     <file name="set.js" path="/home/evan/career-track/set/set.js">
-      <metrics statements="26" coveredstatements="26" conditionals="12" coveredconditionals="11" methods="12" coveredmethods="12"/>
-      <line num="3" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="6" count="9" type="stmt"/>
+      <metrics statements="31" coveredstatements="31" conditionals="14" coveredconditionals="13" methods="14" coveredmethods="14"/>
+      <line num="3" count="16" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="11" type="stmt"/>
       <line num="9" count="1" type="stmt"/>
-      <line num="12" count="17" type="stmt"/>
+      <line num="12" count="20" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
       <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
@@ -29,7 +29,12 @@
       <line num="45" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="46" count="1" type="stmt"/>
       <line num="49" count="1" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
       <line num="53" count="1" type="stmt"/>
+      <line num="54" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="55" count="2" type="stmt"/>
+      <line num="58" count="1" type="stmt"/>
+      <line num="62" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
