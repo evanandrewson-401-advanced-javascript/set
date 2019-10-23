@@ -15,7 +15,21 @@ class Set {
     let result = new Set();
     this.values.forEach(value => {
       if(set.has(value)) {
-        result.values.push(value);
+        result.add(value);
+      }
+    });
+    return result
+  }
+  union(set) {
+    let result = new Set();
+    this.values.forEach(value => {
+      if(!result.has(value)) {
+        result.add(value);
+      }
+    });
+    set.values.forEach(value => {
+      if(!result.has(value)) {
+        result.add(value);
       }
     });
     return result

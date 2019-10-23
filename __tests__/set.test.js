@@ -25,4 +25,10 @@ describe('Set', () => {
     const intersection = set1.intersection(set2)
     expect(intersection.values).toEqual([1, 2]);
   });
+  it('union instance method returns the union', () => {
+    const set1 = new Set([1, 2, 3]);
+    const set2 = new Set([1, 2, 4]);
+    const union = set1.union(set2)
+    expect(union.values).toEqual([1, 2, 3, 4]);
+  });
 })
