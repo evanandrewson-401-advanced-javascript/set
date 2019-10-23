@@ -49,4 +49,10 @@ describe('Set', () => {
     const staticUnion = Set.staticUnion(set1, set2)
     expect(staticUnion.values).toEqual([1, 2, 3, 4]);
   });
+  it('difference static method returns the difference', () => {
+    const set1 = new Set([1, 2, 3]);
+    const set2 = new Set([1, 2, 4]);
+    const staticDifference = Set.staticDifference(set1, set2)
+    expect(staticDifference.values).toEqual([3, 4]);
+  });
 })

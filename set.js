@@ -71,6 +71,20 @@ class Set {
     });
     return result;
   }
+  static staticDifference(set1, set2) {
+    let result = new Set();
+    set1.values.forEach(value => {
+      if(!set2.has(value)) {
+        result.add(value);
+      }
+    });
+    set2.values.forEach(value => {
+      if(!set1.has(value)) {
+        result.add(value);
+      }
+    });
+    return result;
+  }
 }
 
 module.exports = Set;
