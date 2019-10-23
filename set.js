@@ -11,6 +11,15 @@ class Set {
   has(value) {
     return this.values.includes(value)
   }
+  intersection(set) {
+    let result = new Set();
+    this.values.forEach(value => {
+      if(set.has(value)) {
+        result.values.push(value);
+      }
+    });
+    return result
+  }
 }
 
 module.exports = Set;

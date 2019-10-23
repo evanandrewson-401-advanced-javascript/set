@@ -19,4 +19,10 @@ describe('Set', () => {
     const newSet = new Set([1, 2, 3]);
     expect(newSet.has(4)).toBeFalsy();
   });
+  it('intersection instance method returns the intersection', () => {
+    const set1 = new Set([1, 2, 3]);
+    const set2 = new Set([1, 2, 4]);
+    const intersection = set1.intersection(set2)
+    expect(intersection.values).toEqual([1, 2]);
+  });
 })
